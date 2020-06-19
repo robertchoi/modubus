@@ -1,4 +1,5 @@
 import minimalmodbus
+import serial
 
 instrument = minimalmodbus.Instrument('/dev/ttyUSB1', 1)
 
