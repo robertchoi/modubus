@@ -22,7 +22,7 @@ def read_meter():
     print(meter0_value, meter1_value)
     file = open('meter_data.txt', 'w+')
     file.write(time.strftime('%Y%m%d %X '))
-    file.write('{} {}\n'.format(meter0_value,meter0_value))
+    file.write('{} {}\n'.format(meter0_value,meter1_value))
     file.close()
 
   
