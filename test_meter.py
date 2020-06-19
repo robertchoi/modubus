@@ -1,5 +1,4 @@
 import threading, time, subprocess, logging, minimalmodbus
-from apscheduler.scheduler import Scheduler
 from time import sleep
 
 meter0 = minimalmodbus.Instrument("/dev/ttyUSB0", 1)
@@ -13,8 +12,6 @@ meter1.mode = minimalmodbus.MODE_RTU
 
 logging.basicConfig()
 
-sched = Scheduler()
-sched.start()
 
 def read_meter():
 
@@ -30,9 +27,8 @@ def read_meter():
 
   
 def main():
-    sched.add_cron_job(read_meter, second='*/5')
-
     while True:
+        read_meter()
         sleep(1)
 
 if __name__ == "__main__":
