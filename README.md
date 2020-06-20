@@ -83,3 +83,10 @@ MariaDB [mysql]> select host, user, password from user;
 - 라즈베리파이 보드 버전 확인
   
 cat /proc/device-tree/model
+
+
+
+
+- 참고
+https://blog.naver.com/software705/221337666338
+
