@@ -89,4 +89,10 @@ cat /proc/device-tree/model
 
 - 참고
 https://blog.naver.com/software705/221337666338
+https://blusky10.tistory.com/362
+https://backkom-blog.tistory.com/entry/Raspberry-Pi%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4-Docker-Redmine-Mysql-Git-%EC%84%B8%ED%8C%85%ED%95%98%EA%B8%B0-1%ED%8E%B8-Docker%EB%9E%80-17?category=294180
+
+https://121202.tistory.com/24
+
+
 
