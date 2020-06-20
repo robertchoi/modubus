@@ -58,33 +58,14 @@ Query OK, 0 rows affected (0.00 sec)
 ~~~
 
 
-sudo /etc/init.d/mysql stop
-sudo /usr/sbin/mysqld
-
-
-
-pip install pymysql
-
-
-- 참고
-  
+- 참고  
 https://hiiambk.tistory.com/368
 
 
-MariaDB [mysql]> select host, user, password from user;
-+-----------+------+----------+
-| host      | user | password |
-+-----------+------+----------+
-| localhost | root | 12345678 |
-+-----------+------+----------+
-1 row in set (0.00 sec)
 
 
 - 라즈베리파이 보드 버전 확인
-  
 cat /proc/device-tree/model
-
-
 
 
 - 참고
@@ -95,4 +76,38 @@ https://backkom-blog.tistory.com/entry/Raspberry-Pi%EB%9D%BC%EC%A6%88%EB%B2%A0%E
 https://121202.tistory.com/24
 
 
+
+- 파이썬에서 사용하기
+http://www.hardcopyworld.com/gnuboard5/bbs/board.php?bo_table=lecture_rpi&wr_id=37
+
+https://www.tutorialspoint.com/python/python_database_access.htm
+
+- db 생성
+~~~
+CREATE DATABASE pidb;
+~~~
+
+- db 사용
+~~~
+USE pidb;
+~~~
+
+- 테이블 생성
+~~~
+CREATE TABLE test (
+no int(11) NOT NULL auto_increment,
+datef varchar(16) NOT NULL,
+timef varchar(16) NOT NULL,
+ff varchar(16) NOT NULL,
+df varchar(16) NOT NULL,
+vf varchar(16) NOT NULL,
+cf varchar(16) NOT NULL,
+PRIMARY KEY (no)
+);
+~~~
+
+- 테이블 보기
+~~~
+SHOW TABLES;
+~~~
 
